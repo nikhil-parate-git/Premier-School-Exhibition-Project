@@ -1,0 +1,129 @@
+.pse-stats,
+.pse-stats *,
+.pse-stats *::before,
+.pse-stats *::after {
+  box-sizing: border-box;
+}
+
+.pse-stats {
+  padding: 80px 24px;
+  background: #ffffff;
+}
+
+.pse-stats__sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.pse-stats__grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pse-stats__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pse-stats__wreath-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 105px;
+  min-height: 130px;
+}
+
+.pse-stats__laurel {
+  position: absolute;
+  top: 50%;
+  width: 90px;
+  height: auto;
+  transform: translateY(-50%);
+  pointer-events: none;
+  opacity: 0.95;
+}
+
+.pse-stats__laurel--left {
+  left: 0;
+}
+
+.pse-stats__laurel--right {
+  right: 0;
+}
+
+.pse-stats__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+.pse-stats__text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #17458f;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+.pse-stats__text--bold {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e144f;
+}
+
+@media (max-width: 1024px) {
+  .pse-stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pse-stats__wreath-wrapper {
+    padding: 0 95px;
+    min-height: 120px;
+  }
+  .pse-stats__laurel {
+    width: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pse-stats {
+    padding: 60px 16px;
+  }
+  .pse-stats__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .pse-stats__wreath-wrapper {
+    padding: 0 85px;
+    min-height: 110px;
+  }
+  .pse-stats__laurel {
+    width: 70px;
+  }
+  .pse-stats__text {
+    font-size: 15px;
+  }
+  .pse-stats__text--bold {
+    font-size: 18px;
+  }
+}
