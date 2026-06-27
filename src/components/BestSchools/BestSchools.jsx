@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import "./BestFits.css";
+import "./BestSchools.css";
 
 import img1 from "../../assets/images/fits1.png";
 import img2 from "../../assets/images/fits2.png";
