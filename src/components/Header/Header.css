@@ -30,7 +30,7 @@
   z-index: 998;
   background: #231055;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35);
-  overflow: clip;
+  overflow: hidden;
 }
 
 .header__container--purple {

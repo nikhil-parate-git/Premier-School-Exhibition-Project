@@ -184,6 +184,8 @@
   border-radius: 50%;
   border: 1.5px solid rgba(255, 255, 255, 0.6);
   background: rgba(20, 8, 50, 0.55);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   color: #ffffff;
   font-size: 13px;
   font-family: inherit;
@@ -319,6 +321,8 @@
 
 .hero__form-box {
   background: rgba(57, 23, 95, 0.72);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   padding: 26px 24px 28px 25px;
   border-radius: 14px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
